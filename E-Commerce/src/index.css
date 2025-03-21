@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 22px;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%; /* Full width */
+  margin: 0; /* Removes centering */
+  /* border: 1px solid mediumblue; */ /* Removed the thin blue border */
+}
+
+header {
+  width: 100%;
+  padding: 0.5em;
+  background-color: mediumblue;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  flex-grow: 1; /* Pushes the footer to the bottom */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start; /* No centering */
+  align-items: flex-start; /* Align to top-left */
+  overflow-y: auto;
+  padding: 1em; /* Adds spacing */
+}
+
+footer {
+  width: 100%;
+  padding: 0.5em;
+  background-color: mediumblue;
+  color: aliceblue;
+  display: grid;
+  place-content: center;
+}
+
+main ul {
+  list-style: none;
+}
+
+main .item svg {
+  color: rgb(108, 108, 192);
+  outline: none;
+}
+
+main .item svg:hover {
+  color: rgb(197, 97, 97);
+}
